@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-image: url("images/mountains.jpg");
+    background-image: url("images/day_horizon.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -20,28 +20,32 @@ body {
     width: 100%;
 }
 
-.main {
-    height: 100%;
+.wrapper{
     width: 100%;
-    display: table;
-}
-.wrapper {
-    display: table-cell;
     height: 100%;
-    vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#container {
-    padding-left: 40px;
+.wrapper #main-data {
     text-align: left;
+    margin-left: 40px;
 }
 
-#bio-data ul {
+.wrapper .side-data {
+    display: none;
+    text-align: center;
+    margin-right: 40px;
+}
+
+
+ul {
     list-style-type: none;
     padding: 0;
 }
 
-#bio-data ul li {
+li {
     margin-bottom: 10px;
 }
 .text a {
@@ -49,15 +53,30 @@ body {
     text-decoration: none;
 }
 
-.text a:hover {
+#main-data .text a:hover {
+    cursor: pointer;
     color: skyblue;
-    transform-origin: left top;
+    transform-origin: left center;
     transform: scale(1.1);
     transition: all ease 500ms;
 }
 
-#head .header-text:hover {
-    color: lightgray;
+#social-media ul li{
+    margin-right: 10px;
+    display: inline;
+    zoom: 1;
+    *display:inline;
+}
+
+.side-data .text a:hover {
+    color: skyblue;
+    transform-origin: center center;
+    transform: scale(1.1);
+    transition: all ease 500ms;
+}
+
+.header-text:hover {
+    color: lightcoral;
     transition: all ease 500ms;
 }
 
@@ -81,3 +100,25 @@ body {
     transition: all ease 500ms;
 }
 
+.side-head .side-name{
+    /* Fallback: Set a background color. */
+    background: rgb(186,125,127);
+
+    background: linear-gradient(141deg, rgba(186,125,127,1) 0%, rgba(0,212,255,1) 100%);
+
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    transition: all ease 500ms;
+}
+
+#education {
+    display: none;
+}
