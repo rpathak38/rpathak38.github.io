@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-image: url("images/mountains.jpg");
+    background-image: url("images/space.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -36,7 +36,7 @@ body {
 .wrapper .side-data {
     display: none;
     text-align: center;
-    margin-right: 40px;
+    margin-right: 60px;
 }
 
 
@@ -66,13 +66,6 @@ li {
     display: inline;
     zoom: 1;
     *display:inline;
-}
-
-.side-data .text a:hover {
-    color: skyblue;
-    transform-origin: center center;
-    transform: scale(1.1);
-    transition: all ease 500ms;
 }
 
 .header-text:hover {
@@ -113,9 +106,18 @@ li {
     /* Use the text as a mask for the background. */
     /* This will show the gradient as a text color rather than element bg. */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+}
+
+.side-head .side-name a {
+    display: inline-block;
+    text-decoration: none;
+    -webkit-text-fill-color: rgb(0,212,255);
+}
+
+.side-head .side-name a:hover {
+    transform: scale(1.1);
+    transform-origin: right;
     transition: all ease 500ms;
 }
 
