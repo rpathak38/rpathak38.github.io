@@ -66,6 +66,7 @@ li {
     display: inline;
     zoom: 1;
     *display:inline;
+    text-rendering: optimizeLegibility;
 }
 
 .header-text:hover {
